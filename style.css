@@ -8,6 +8,20 @@
 body {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
+    width: 100vw;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+button {
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: 0px;
+    font-weight: bolder;
+    color: white;
+    background: #057a97;
 }
 
 ul {
@@ -32,4 +46,14 @@ nav p {
 header {
     height: calc(100vh - 100px);
     background: no-repeat center / cover url("imagens/imagem-header3.jpg") 
+}
+
+.header-content {
+    max-width: 500px;
+    margin: 120px auto;
+    text-align: center;
+}
+
+.header-content h1 {
+    margin-bottom: 5px;
 }
