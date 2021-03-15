@@ -1,8 +1,13 @@
-@charset "UTF-8";
 
-nav {
-    display: flex;
-    justify-content: space-between;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
 }
 
 ul {
@@ -12,4 +17,14 @@ ul {
 
 li {
     margin: 0px 15px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin: auto 30px;
+}
+
+nav p {
+    font-weight: bold;
 }
