@@ -11,10 +11,6 @@ body {
     width: 100vw;
 }
 
-h1 {
-    font-size: 4rem;
-}
-
 button {
     padding: 10px 15px;
     border-radius: 10px;
@@ -24,28 +20,28 @@ button {
     background: #057a97;
 }
 
-ul {
-    list-style: none;
-    display: flex;
+header {
+    height: calc(100vh - 100px);
+    background: no-repeat center / cover url("imagens/imagem-header3.jpg") 
 }
 
-li {
-    margin: 0px 15px;
-}
-
-nav {
+header nav {
     display: flex;
     justify-content: space-between;
     margin: auto 30px;
 }
 
-nav p {
+header nav p {
     font-weight: bold;
 }
 
-header {
-    height: calc(100vh - 100px);
-    background: no-repeat center / cover url("imagens/imagem-header3.jpg") 
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin: 0px 15px;
 }
 
 .header-content {
@@ -56,4 +52,50 @@ header {
 
 .header-content h1 {
     margin-bottom: 5px;
+    font-size: 3rem;
 }
+
+.pacotes {
+    background-color: chartreuse;
+    height: 500px;
+}
+
+/* RESPONSIVIDADE em imagens - sempre comçar do maior formato para o menor*/
+
+/* tamanho de tablet */
+@media (max-width: 760px) {
+    header {
+        background-color: aqua;
+    }
+}
+
+/* tamanho de celular */
+@media (max-width: 480px) {
+    body {
+        height: calc(100vh- 55px);
+    }
+
+    header nav ul{
+        position: fixed;
+        bottom: 0px;
+        left: 0px;
+        width: 100%;
+        padding: 0px;
+        margin: 0px;
+
+        background: #057a97;
+        color: white;
+        font-weight: bold;
+        height: 55px;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header nav p {
+        width: 100%;
+        text-align: center;
+    }
+}
+
