@@ -1,5 +1,6 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;500;700&display=swap');
 
 * {
     box-sizing: border-box;
@@ -7,7 +8,8 @@
 
 body {
     margin: 0;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Hind Siliguri', sans-serif;
+    /* font-family: 'Montserrat', sans-serif;  - fonte reserva   */
     width: 100vw;
 }
 
@@ -15,14 +17,16 @@ button {
     padding: 10px 15px;
     border-radius: 10px;
     border: 0px;
-    font-weight: bolder;
+    font-weight: 600;
     color: white;
     background: #057a97;
 }
 
 header {
     height: calc(100vh - 100px);
-    background: no-repeat center / cover url("imagens/imagem-header3.jpg") 
+    background: no-repeat center / cover url("imagens/imagem-header3.jpg");
+    font-size: 1.1rem;
+    font-weight: bold;
 }
 
 header nav {
@@ -32,7 +36,7 @@ header nav {
 }
 
 header nav p {
-    font-weight: bold;
+    font-weight: 500;
 }
 
 header nav ul {
@@ -52,7 +56,7 @@ header nav ul li {
 
 .header-content h1 {
     margin-bottom: 5px;
-    font-size: 3rem;
+    font-size: 4rem;
 }
 
 .pacotes {
@@ -62,12 +66,16 @@ header nav ul li {
 
 .pacotes .pacotes-cards {
     display: flex;
+    margin: auto;
+    max-width: 1050px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .pacotes .pacotes-title {
     width: 100%;
     text-align: center;
-    padding: 15px;
+    margin: 25px 0;
 }
 
 .pacotes .card {
@@ -76,7 +84,7 @@ header nav ul li {
     background: #E2D4B7;
     border-radius: 20px 0px;
     position: relative;
-    margin: auto;
+    margin: 25px;
 }
 
 .pacotes .card-image {
@@ -84,6 +92,7 @@ header nav ul li {
     height: 250px;
     border-radius: 20px 0 0 0;
     margin: auto;
+    object-fit: cover;
 }
 
 .pacotes .card-content {
@@ -152,7 +161,7 @@ margin-right: 10px;
 /* tamanho de celular */
 @media (max-width: 480px) {
     body {
-        height: calc(100vh- 55px);
+        margin-bottom: 55px;
     }
 
     header nav ul{
@@ -162,6 +171,8 @@ margin-right: 10px;
         width: 100%;
         padding: 0px;
         margin: 0px;
+
+        z-index: 99;
 
         background: #057a97;
         color: white;
