@@ -23,7 +23,7 @@ button {
 }
 
 header {
-    height: calc(100vh - 100px);
+    height: 100vh;   /*  height: calc(100vh - 100px);  */
     background: no-repeat center / cover url("imagens/imagem-header3.jpg");
     font-size: 1.1rem;
     font-weight: bold;
@@ -96,7 +96,7 @@ header nav ul li {
 }
 
 .pacotes .card-content {
-    padding: 0px 15px;
+    padding: 0px 10px;
 }
 
 .pacotes .card-content ul {
@@ -143,6 +143,59 @@ margin-right: 10px;
     margin: 0px;
     color: white;
     font-weight: bold;
+}
+
+.servicos {
+    padding: 15px;
+}
+
+.servicos .servicos-title {
+    text-align: center;
+    margin: 35px 0;
+}
+
+.servicos .servicos-cards{
+    display: flex;
+    max-width: 950px;
+    justify-content: center;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+.servicos .card {
+    width: 250px;
+    display: flex;
+    flex-direction: column;     /* usando flex-direction: column; , os justify-content:  e o alig-items são invertidos. Com o cuidando justify-content; cuidando o alinhado vertical e o alig-items o dá horizontal  */
+    justify-content: center;
+    align-items: center;
+    margin: 25px;
+}
+
+.servicos .card svg {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 40px;
+    transition: all 0.5s;
+}
+
+.servicos .card svg:hover {
+    stroke: rgb(226, 92, 14);
+    transform: scale(1.4);
+}
+
+.servicos .card h3 {
+    font-weight: bolder;
+}
+
+.servicos .card p {
+    color: grey;
+    font-size: .9rem;
+    text-align: center;
+}
+
+.servicos .card .card-content {
+    height: 270px;
+    text-align: center;
 }
 
 /*   .pacotes .card-content h1 {
