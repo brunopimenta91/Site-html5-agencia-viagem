@@ -142,7 +142,6 @@ margin-right: 10px;
 .pacotes .card .card-tag p {
     margin: 0px;
     color: white;
-    font-weight: bold;
 }
 
 .servicos {
@@ -197,6 +196,17 @@ margin-right: 10px;
     height: 270px;
     text-align: center;
 }
+
+/*configuração do estilo do maps do google que inserimos na seção contato  */
+#map {
+    height: 400px;
+    /* The height is 400 pixels */
+    width: 100%;
+    /* The width is the width of the web page */
+  }
+
+
+
 
 /*   .pacotes .card-content h1 {
     font-size: 1rem;

@@ -190,9 +190,31 @@
         </div>
     </section>
 
+
     <script>
+        //função que irá mudar os icones que inserimos e escolhemos atraves do feather
         feather.replace()
+
+        //função que irá fazeer funcionar o Maps do google na seção contato - Initialize and add the map
+        function initMap() {
+            // The location of Uluru
+            const uluru = { lat: -25.344, lng: 131.036 };
+            // The map, centered at Uluru
+            const map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 4,
+                center: uluru,
+            });
+            // The marker, positioned at Uluru
+            const marker = new google.maps.Marker({
+                position: uluru,
+                map: map,
+            });
+        }
     </script>
+
+    <!-- Segundo script necessário para o funcionamento correto do Maps do google, retiramos o trecho do script 'key=YOUR_API_KEY&' pois é um serviço pago e estamos so desenvolvendo pra aprendizado. - Async script executes immediately and must be after any DOM elements used in callback. 
+    link: https://developers.google.com/maps/documentation/javascript/adding-a-google-map#maps_add_map-typescript   -->
+    <script src="https://maps.googleapis.com/maps/api/js?callback=initMap&libraries=&v=weekly" async></script>
 </body>
 
 </html>
