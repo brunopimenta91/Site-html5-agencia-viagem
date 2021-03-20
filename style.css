@@ -13,6 +13,10 @@ body {
     width: 100vw;
 }
 
+ul {
+    list-style: none;
+}
+
 button {
     padding: 10px 15px;
     border-radius: 10px;
@@ -205,7 +209,53 @@ margin-right: 10px;
     /* The width is the width of the web page */
   }
 
+.contato {
+    padding: 60px;
+    background: #E2D4B7;
+    position: relative;
+}
 
+.contato .contato-card {
+    width: 350px;
+    height: 300px;
+    background: white;
+    position: absolute;
+    z-index: 99;
+
+    top: calc(50% - 150px);
+    left: calc(20% - 175px);
+
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contato .contato-card h1 {
+    padding-left: 50px;
+    text-align: left;
+}
+
+.contato .contato-card li {
+    font-size: .8rem;
+    font-weight: bold;
+    color: grey;
+
+    display: flex;
+    align-items: center;
+
+    text-align: center;
+}
+
+.contato .contato-card li svg {
+    width: 16px;
+    margin: 15px;
+}
+
+.contato .contato-card {
+    position: central;
+    margin: 40px 0;
+}
 
 
 /*   .pacotes .card-content h1 {
@@ -213,6 +263,29 @@ margin-right: 10px;
 }     */
 
 /* RESPONSIVIDADE em imagens - sempre comçar do maior formato para o menor*/
+/* Tamanho espacial para mapas */
+@media (max-width: 950px) {
+    .contato {
+        padding: 60px 0;
+    }  
+
+    .contato .contato-card {
+        left: 40px;
+    }
+}
+
+/*tamanho já diminuindo */
+@media (max-width: 800px) {
+    .contato {
+        padding: 20px 0;
+    }
+
+    .contato .contato-card {
+        position: static;
+        margin: 40px auto;
+    }
+}
+
 
 /* tamanho de tablet */
 @media (max-width: 760px) {
@@ -251,5 +324,6 @@ margin-right: 10px;
         width: 100%;
         text-align: center;
     }
+
 }
 
