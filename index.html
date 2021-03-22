@@ -13,22 +13,23 @@
 <body>
     <header>
         <nav>
-            <p>Logo agência viagens</p>
+            <!--    <p>Logo agência viagens</p>  -->
+            <img id="logo" src="./imagens/imagem-logo-agencia.png" alt="logo agencia turistar">
             <ul>
-                <li>Home</li>
-                <li>Pacotes</li>
-                <li>Serviços</li>
-                <li>Contato</li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#pacotes">Pacotes</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#contato">Contato</a></li>
             </ul>
         </nav>
-        <div class="header-content">
+        <div id="home" class="header-content">
             <h1>Grand Canyon</h1>
             <p>Conheça o Grand Canyon, observe de perto as belezas dessa lugar! Vagas limitadas, junte se a nós nessa
                 experiência singular.</p>
             <button>Saiba mais.</button>
         </div>
     </header>
-    <section class="pacotes">
+    <section id="pacotes" class="pacotes">
         <h1 class="pacotes-title">Conheça nossos pacotes</h1>
         <div class="pacotes-cards">
             <div class="card">
@@ -150,7 +151,7 @@
         </div>
     </section>
 
-    <section class="servicos">
+    <section id="servicos" class="servicos">
         <h1 class="servicos-title">Serviços ofertados</h1>
         <div class="servicos-cards">
             <div class="card">
@@ -190,7 +191,7 @@
         </div>
     </section>
 
-    <section class="contato">
+    <section id="contato" class="contato">
         <div class="contato-card">
             <h1>Entre em contato</h1>
             <ul>
@@ -207,6 +208,9 @@
     <script>
         //função que irá mudar os icones que inserimos e escolhemos atraves do feather
         feather.replace()
+
+        //script para scroll suave entre as seções do site
+       
 
         //função que irá fazeer funcionar o Maps do google na seção contato - Initialize and add the map
         function initMap() {

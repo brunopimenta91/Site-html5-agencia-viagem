@@ -17,6 +17,11 @@ ul {
     list-style: none;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 button {
     padding: 10px 15px;
     border-radius: 10px;
@@ -50,6 +55,11 @@ header nav ul {
 
 header nav ul li {
     margin: 0px 15px;
+}
+header img#logo {
+    border-radius: 30px;
+    top: 20px;
+    position: relative;
 }
 
 .header-content {
@@ -182,7 +192,7 @@ margin-right: 10px;
 }
 
 .servicos .card svg:hover {
-    stroke: rgb(226, 92, 14);
+    stroke: rgb(225, 92, 14);
     transform: scale(1.4);
 }
 
@@ -222,8 +232,8 @@ margin-right: 10px;
     position: absolute;
     z-index: 99;
 
-    top: calc(50% - 150px);
-    left: calc(20% - 175px);
+    top: calc(50% - 180px);
+    left: calc(20% - 250px);
 
     text-align: center;
     display: flex;
