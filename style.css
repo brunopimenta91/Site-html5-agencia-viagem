@@ -38,8 +38,13 @@ header {
     font-weight: bold;
 }
 
+.header-logo {
+    position: relative;
+}
+
 header nav {
     display: flex;
+    float: right;
     justify-content: space-between;
     margin: auto 30px;
 }
@@ -56,16 +61,13 @@ header nav ul {
 header nav ul li {
     margin: 0px 15px;
 }
-header img#logo {
-    border-radius: 30px;
-    top: 20px;
-    position: relative;
-}
+
 
 .header-content {
     max-width: 500px;
     margin: 120px auto;
     text-align: center;
+    margin-top: 0px;
 }
 
 .header-content h1 {
@@ -305,7 +307,7 @@ margin-right: 10px;
 }
 
 /* tamanho de celular */
-@media (max-width: 480px) {
+@media (max-width: 550px) {
     body {
         margin-bottom: 55px;
     }
@@ -333,6 +335,10 @@ margin-right: 10px;
     header nav p {
         width: 100%;
         text-align: center;
+    }
+
+    header img#logo {
+        margin: auto;
     }
 
 }
