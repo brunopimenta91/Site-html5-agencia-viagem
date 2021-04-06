@@ -1,5 +1,5 @@
+@charset "UTF-8";
 
-/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;500;700&display=swap');
 
 * {
@@ -9,8 +9,6 @@
 body {
     margin: 0;
     font-family: 'Hind Siliguri', sans-serif;
-    /* font-family: 'Montserrat', sans-serif;  - fonte reserva   */
-    width: 100vw;
 }
 
 ul {
@@ -24,66 +22,60 @@ a {
 
 button {
     padding: 10px 15px;
-    border-radius: 10px;
-    border: 0px;
-    font-weight: 600;
-    color: white;
+    border-radius: 8px;
+    font-weight: bold;
+    border: 0;
     background: #057a97;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
 }
 
 header {
-    height: 100vh;   /*  height: calc(100vh - 100px);  */
-    background: no-repeat center / cover url("imagens/imagem-header3.jpg");
-    font-size: 1.1rem;
-    font-weight: bold;
-}
-
-.header-logo {
-    position: relative;
+    height: calc(100vh);
+    background: no-repeat center/cover url('imagens/imagem-header3.jpg');
 }
 
 header nav {
     display: flex;
-    float: right;
     justify-content: space-between;
     margin: auto 30px;
 }
 
 header nav p {
-    font-weight: 500;
+    font-weight: bold;
+    font-size: 1.7rem;
+    color: #e25c0e;
+    text-shadow: 3px 3px 3px black;
 }
 
 header nav ul {
-    list-style: none;
     display: flex;
 }
 
 header nav ul li {
-    margin: 0px 15px;
+    margin: 0 15px;
 }
 
-
 .header-content {
-    max-width: 500px;
-    margin: 120px auto;
+    max-width: 400px;
+    margin: 150px auto;
     text-align: center;
-    margin-top: 0px;
 }
 
 .header-content h1 {
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     font-size: 4rem;
 }
 
 .pacotes {
-    background-color: #18216faf;
+    background: #e1e8f7;
     padding: 15px;
 }
 
 .pacotes .pacotes-cards {
     display: flex;
     margin: auto;
-    max-width: 1050px;
+    max-width: 950px;
     flex-wrap: wrap;
     justify-content: center;
 }
@@ -95,69 +87,73 @@ header nav ul li {
 }
 
 .pacotes .card {
-    width: 300px;
-    height: 450px;
-    background: #E2D4B7;
-    border-radius: 20px 0px;
-    position: relative;
+    width: 250px;
+    height: 350px;
+    background: white;
+    border-radius: 24px 0px;
     margin: 25px;
+    position: relative;
 }
 
 .pacotes .card-image {
-    width: 300px;
-    height: 250px;
-    border-radius: 20px 0 0 0;
-    margin: auto;
+    width: 250px;
+    height: 200px;
+    border-radius: 24px 0 0 0;
     object-fit: cover;
 }
 
 .pacotes .card-content {
-    padding: 0px 10px;
+    padding: 0 15px;
 }
 
 .pacotes .card-content ul {
     display: flex;
     flex-direction: column;
-    list-style: none;
-    padding: 0px;
+    padding: 0;
 }
 
 .pacotes .card-content ul li {
-    font-size: .8rem;
+    font-size: 0.6rem;
     display: flex;
     align-items: center;
-    padding: 5px;
+    margin: 3px 0;
     color: grey;
     font-weight: bold;
 }
 
-.pacotes .card-content ul li svg {
-width: 18px;
-height: 18px;
-margin-right: 10px;
+.pacotes .card-content li svg {
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+}
+
+.pacotes .card-content h1 {
+    font-size: 1rem;
 }
 
 .pacotes .card .card-tag-top {
     position: absolute;
     right: 0;
-    background: rgb(226, 92, 14);
+    top: 15px;
+    background: #F19B39;
     border-radius: 8px 0 0 8px;
     padding: 5px 10px;
-    margin-top: 15px;
 }
 
 .pacotes .card .card-tag-bottom {
     position: absolute;
     left: 0;
-    background: rgb(226, 92, 14);
+    top: 160px;
+    background: #057a97;
     border-radius: 0 8px 8px 0;
     padding: 5px 10px;
-    margin-top: 200px;
 }
 
 .pacotes .card .card-tag p {
-    margin: 0px;
+    margin: 0;
+    font-size: 0.8rem;
     color: white;
+    font-weight: bold;
 }
 
 .servicos {
@@ -169,7 +165,8 @@ margin-right: 10px;
     margin: 35px 0;
 }
 
-.servicos .servicos-cards{
+.servicos .servicos-cards {
+    margin-top: 25px;
     display: flex;
     max-width: 950px;
     justify-content: center;
@@ -179,51 +176,55 @@ margin-right: 10px;
 
 .servicos .card {
     width: 250px;
+    height: 400px;
     display: flex;
-    flex-direction: column;     /* usando flex-direction: column; , os justify-content:  e o alig-items são invertidos. Com o cuidando justify-content; cuidando o alinhado vertical e o alig-items o dá horizontal  */
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 25px;
+    margin: 0 20px;
 }
 
 .servicos .card svg {
-    width: 50px;
-    height: 50px;
-    margin-bottom: 40px;
-    transition: all 0.5s;
+    width: 60px;
+    height: 60px;
+    margin: 50px;
+    transition: all 1s;
 }
 
 .servicos .card svg:hover {
-    stroke: rgb(225, 92, 14);
+    stroke: #e25c0e;
     transform: scale(1.4);
 }
 
 .servicos .card h3 {
-    font-weight: bolder;
+    font-weight: bold;
 }
 
 .servicos .card p {
     color: grey;
-    font-size: .9rem;
+    font-size: .8rem;
     text-align: center;
 }
 
 .servicos .card .card-content {
-    height: 270px;
+    height: 220px;
     text-align: center;
 }
 
-/*configuração do estilo do maps do google que inserimos na seção contato  */
+.servicos button {
+    background: #057a97;
+}
+
 #map {
     height: 400px;
     /* The height is 400 pixels */
     width: 100%;
     /* The width is the width of the web page */
-  }
+}
 
 .contato {
     padding: 60px;
-    background: #E2D4B7;
+    background: #e1e8f7;
     position: relative;
 }
 
@@ -234,13 +235,16 @@ margin-right: 10px;
     position: absolute;
     z-index: 99;
 
-    top: calc(50% - 180px);
-    left: calc(20% - 250px);
+    border-radius: 8px;
+
+    top: calc(50% - 150px);
+    left: calc(20% - 175px);
 
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    box-shadow: 0 1px 6px 0 rgba(32, 33, 36, .28);
 }
 
 .contato .contato-card h1 {
@@ -252,41 +256,31 @@ margin-right: 10px;
     font-size: .8rem;
     font-weight: bold;
     color: grey;
-
+    
     display: flex;
     align-items: center;
-
-    text-align: center;
 }
 
 .contato .contato-card li svg {
     width: 16px;
-    margin: 15px;
-}
-
-.contato .contato-card {
-    position: central;
-    margin: 40px 0;
+    margin: 10px;
 }
 
 
-/*   .pacotes .card-content h1 {
-    font-size: 1rem;
-}     */
+/* RESPONSIVIDADE */
 
-/* RESPONSIVIDADE em imagens - sempre comçar do maior formato para o menor*/
-/* Tamanho espacial para mapas */
+/* Especial para mapa */
 @media (max-width: 950px) {
     .contato {
         padding: 60px 0;
-    }  
+    }
 
     .contato .contato-card {
         left: 40px;
     }
 }
 
-/*tamanho já diminuindo */
+/* Especial para mapa */
 @media (max-width: 800px) {
     .contato {
         padding: 20px 0;
@@ -298,48 +292,33 @@ margin-right: 10px;
     }
 }
 
-
-/* tamanho de tablet */
-@media (max-width: 760px) {
-    header {
-        background-color: aqua;
-    }
+/* Landscape TABLETS and down */
+@media (max-width: 767px) {
 }
 
-/* tamanho de celular */
-@media (max-width: 550px) {
+/* Landscape phones and down */
+@media (max-width: 480px) {
     body {
         margin-bottom: 55px;
     }
-
-    header nav ul{
+    header nav ul {
         position: fixed;
-        bottom: 0px;
-        left: 0px;
+        bottom: 0;
+        left: 0;
         width: 100%;
-        padding: 0px;
-        margin: 0px;
-
+        padding: 0;
+        margin: 0;
         z-index: 99;
-
-        background: #057a97;
+        background: #1D61DD;
         color: white;
         font-weight: bold;
         height: 55px;
-
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
-
     header nav p {
         width: 100%;
         text-align: center;
     }
-
-    header img#logo {
-        margin: auto;
-    }
-
 }
-
