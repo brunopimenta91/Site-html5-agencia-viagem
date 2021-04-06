@@ -1,22 +1,33 @@
-<h1 align="center"> Site estático - agência de viagens</h1>
+# Travel Agency Site
 
-## Descrição do Projeto
-<p align="justify"> Projeto prático de desenvolvimento de um site web estático para uma ficticia agência de viagens.</p>
+Hello! This is a project developed with the intention to **learn and exercise** web development in practice.
+
+## Project description
+<p align="justify">
+ The main goal here were to share my current knowledge the basics of HTML and CSS with others students and increase my own portfolio.
+ </p> 
+ 
+## functionalities
+
+Nice things that should be learned from this project:
+- Flexbox concepts
+  - We covered the basics of flexbox, like: felx-direction, align-items and justify-content
+- Section of contact information and the agency services with icons
+  - Show the information about the services and ways how to contact the agency using icons, using javascript1s scripts and icons.
+- How to integrate with Google Maps
+  - The website contact section uses a map to show the address, for that we used google maps integration and documentation.
+- Multiples sizes of screen
+  - The all site is responsive for desktops, tablets and smartphones.
+
 
 ## Bagdes
+
 ![Badge](https://img.shields.io/github/issues/brunopimenta91/Site-html5-agencia-viagem)
 ![Badge](https://img.shields.io/github/forks/brunopimenta91/Site-html5-agencia-viagem)
 ![Badge](https://img.shields.io/github/stars/brunopimenta91/Site-html5-agencia-viagem)
 ![Badge](https://img.shields.io/github/license/brunopimenta91/Site-html5-agencia-viagem)
 
-## Funcionalidades
-### Menu interativo
-1.Layout inicial chamativo visualmente, com imagem relacionada ao público-alvo, associado com a apresentação da logo da empresa. </br>
-2.Menu que os seus botões de navegador, quando clicados, direcionam a pagina para certo setor. </br>
-3.Seção dedicada a apresentação de pacotes de viagem, usando cards e com estilo padrão. </br>
-4.Seção com a oferta de serviços disponiveis, com informações textuais e visuais, com icones e integração com css3. </br>
-5.Seção da pagina com a divulgação das informações de contato da empresa, com o uso da API maps da Google.
+## Project status
 
-## Status do projeto
-> Status do Projeto: Em desenvolvimento :warning:
+> Project status: Under development :warning:
 
